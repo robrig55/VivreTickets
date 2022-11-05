@@ -1,0 +1,190 @@
+.setup_event {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.setup_event .logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #52c7c1;
+}
+
+.setup_event .content {
+    width: 75%;
+}
+
+.setup_event .daterange {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.setup_event .country {
+    display: flex;
+    flex: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.setup_event .country_select {
+    max-height: 200px;
+}
+
+.setup_event .bannerUploader {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: flex-start;
+    align-items: center;
+
+    flex-flow: row wrap;
+}
+
+.setup_event span {
+    color: #52c7c1;
+    font-weight: bold;
+    margin: 0px;
+
+    text-align: left;
+    white-space: nowrap;
+}
+
+.setup_event .input {
+    border-width: 0px;
+    max-width: 30%;
+}
+
+.setup_event .seat_plan {
+    display: flex;
+    flex-direction: row;  
+    
+    justify-content: flex-start;
+    align-items: center;
+
+    flex-flow: row wrap;
+}
+
+.setup_event .payment {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.setup_event .seats {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.setup_event .seats .section {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.setup_event .seats .section .table {
+    border: none;
+    padding: 0px;
+}
+.setup_event .seats .section .table .td {
+    border: none;
+    padding: 5px;
+}
+
+.setup_event .seats .section .table .th {
+    color: #52c7c1;
+    text-align: center;
+    border: none;
+    padding: 5px;
+}
+
+.setup_event .btn_add {
+    cursor: pointer;
+}
+
+.setup_event .btn_add:hover {
+    scale: 1.05;
+}
+
+.setup_event .btn_add:active {
+    scale: 0.95;
+}
+
+.setup_event .accept_term {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: flex-end;
+    align-self: flex-end;
+}
+
+.setup_event .check_box {
+    display: flex;
+    flex-direction: row;
+
+    background-color: rgb(253, 250, 241);
+    border-width: 1px;
+    border-style: solid;
+    border-color: #52c7c1;
+    border-left-width: 0;
+    border-right-width: 0;
+}
+
+.setup_event .accept_term .saveEvent {
+    color: white;
+    background-color: #52c7c1;
+    font-size: 20px;
+
+    cursor: pointer;    
+}
+
+.setup_event .accept_term .saveEvent:hover {
+    scale: 1.01;
+}
+
+.setup_event .accept_term .saveEvent:active {
+    scale: 0.95;
+}
+
+.setup_event .currency {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.react-autosuggest__container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 800px) {
+    
+}
+
+@media screen and (max-width: 800px) and (min-width: 425px) {
+}
+
+@media screen and (max-width: 425px) and (min-width: 250px) {
+    .setup_event {
+        padding: 10px;
+    }
+
+    .setup_event .content {
+        width: 100%;
+    }
+    .setup_event .currency {
+        display: flex;
+        justify-content: flex-end;
+    }
+}

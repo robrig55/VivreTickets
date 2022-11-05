@@ -1,0 +1,174 @@
+.receipt {
+    display: flex;
+    flex-direction: column;
+}
+
+.receipt .logo {
+    width: 200px;
+}
+
+.receipt span{
+    /* color: #52c7c1; */
+    color: black;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.receipt .divider {
+    height: 3px;
+    background-color: #52c7c1;
+}
+
+.receipt .header {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+    
+    justify-content: space-between;
+    align-items: center;
+}
+
+.receipt .detail {
+    display: flex;
+    flex-direction: column;
+}
+
+.receipt .content {
+    display: flex;
+    flex-direction: column;
+}
+
+.receipt .content .event_info {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 100%;
+}
+
+.receipt .content .user_info {
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+}
+
+.receipt .content .event_detail {
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+}
+
+.receipt .myStyle {
+    overflow-wrap: break-word;
+    max-width: 100%;
+}
+
+
+.receipt .content .purchase_info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.receipt .content .purchase_info .table .th {
+    background-color: #52c7c1;
+    color: black;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.receipt .content .purchase_info .table .td {
+    font-size: 15px;
+    color: black;
+    padding: 5px;
+    border: none;
+}
+
+.receipt .result {
+    display: flex;
+
+    justify-content: flex-end;
+    align-items: center;
+    
+    margin-right: 10%;
+}
+
+.receipt .result span{
+    color: #52c7c1;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+.receipt .thanks {
+    margin-top: 200px;
+    margin-bottom: 300px;
+}
+
+.receipt .thanks span {
+    color: #52c7c1;
+    
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.receipt .note {
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.receipt .note span {
+    color: lightgrey;
+    font-size: 15px;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    text-align: left;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 800px) {
+    
+}
+
+@media screen and (max-width: 800px) and (min-width: 425px) {
+    .receipt .logo {
+        width: 150px;
+    }
+    .receipt .thanks {
+        margin-top: 120px;
+        margin-bottom: 150px;
+    }
+    
+    .receipt .thanks span {
+        color: #52c7c1;
+        
+        font-size: 25px;
+        font-weight: bolder;
+    }
+}
+
+@media screen and (max-width: 425px) and (min-width: 250px ) {
+    .receipt .logo {
+        width: 100px;
+    }
+    .receipt .thanks {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    
+    .receipt .thanks span {
+        color: #52c7c1;
+        
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+   
+}

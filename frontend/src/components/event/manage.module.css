@@ -1,0 +1,53 @@
+.table {
+    border: none;
+}
+
+.th {
+    border: none;
+    color: #52c7c1;
+
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+
+}
+
+.td {
+    border: none;
+
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+
+    color: #52c7c1;
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    background-color: #52c7c1;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 800px) {
+    
+}
+
+@media screen and (max-width: 800px) and (min-width: 425px) {
+    .th {
+        padding: 5px 5px;
+    }
+    .td {
+        padding: 5px 5px;
+    }    
+}
+
+@media screen and (max-width: 4250px) and (min-width: 250px) {
+    .th {
+        padding: 5px 5px;
+    }
+    .td {
+        padding: 5px 5px;
+    }
+}

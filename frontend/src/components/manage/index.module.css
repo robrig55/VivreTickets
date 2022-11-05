@@ -1,0 +1,108 @@
+.manage {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.manage .table {
+    border: none;
+    color: black;
+    border-collapse: collapse;
+} 
+.manage .table .th {
+    border: none;
+    background-color: antiquewhite;
+    font-size: 20px;
+    font-weight: bold;
+
+    padding: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.manage .table .td {
+    border: none;
+    font-size: 15px;
+    padding: 10px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.manage .table .tr {
+    cursor: pointer;
+}
+
+.tr:nth-child(even) {
+    background-color: #D6EEEE;
+}
+
+.manage .table .tr:hover {
+    background-color: #52c7c1;
+}
+
+.manage .users {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.manage .content {
+    display: flex;
+    flex-direction: column;
+}
+
+.manage .table .mark_enable {
+    color: white;
+    background-color: darkgrey;
+}
+
+.manage .table .mark_disable {
+    color: white;
+    background-color: darkred;
+}
+
+.manage .edit {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.manage .buttons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+@media screen and (max-width: 1000px) and (min-width: 800px) {
+    
+}
+
+@media screen and (max-width: 800px) and (min-width: 425px) {
+    
+}
+
+@media screen and (max-width: 425px) and (min-width: 250px) {
+    .manage {
+        padding: 10px !important;
+    }
+    .manage .table .th {
+        font-size: 15px !important;
+        padding: 5px !important;
+    }
+    .manage .table .td {
+        font-size: 13px !important;
+        padding: 5px !important;
+    }
+}

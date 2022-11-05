@@ -1,0 +1,130 @@
+.home {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* overflow: scroll; */
+}
+
+.tickets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tickets .search {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+.tickets .table, .table .td {
+    color: black;
+    border: 1px solid #52c7c1;
+    border-right-width: 0px;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+.tickets .table .th {
+    color: black;
+    border: 1px solid #52c7c1;
+    border-right-width: 0px;
+    border-collapse: collapse;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.each_slide_effect > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 100% 100%;
+    height: 350px;
+}
+
+.table_content {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.table_content_body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.table_content_body .header {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.table_content_body .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.table_content_body .desc {
+    text-align: left;
+    text-overflow: ellipsis;
+    max-width: 50%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+p {
+    display: block;
+    margin-block-start: auto;
+    margin-block-end: auto;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.span_bold {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 800px) {
+    
+}
+
+@media screen and (max-width: 800px) and (min-width: 425px) {
+    .each_slide_effect > div {
+        height: 275px;
+    }
+}
+
+@media screen and (max-width: 425px) and (min-width: 250px) {
+    .home {
+        padding: 10px;
+    }
+    .each_slide_effect > div {
+        height: 200px;
+    }
+    .tickets .table .th {
+        padding: 5px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .tickets .table, .table .td {
+        padding: 5px;
+    }
+
+    .table_content_body .header {
+        font-size: 15px;
+    }
+
+    span {
+        font-size: 15px;
+    }
+
+    .span_bold {
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,96 @@
+.footer {
+  margin-top: auto;
+  width: 100%;
+  
+  padding: 10px 15px 15px 15px;
+  justify-content: center;
+  align-items: center;
+
+  display: flex;
+  flex-direction: row;
+  
+  background-color: #e8ede7;
+}
+
+.f-sky {
+  color: #52c7c1;
+}
+
+.f-facebook { 
+  font-size: 50px;
+}
+
+.f-twitter {
+  font-size: 60px;
+}
+
+.f-instagram {
+  font-size: 30px;
+  width: 55px;
+  height: 55px;
+  margin-left: 2.5px;
+}
+
+.footer .copyright {
+  margin-left: auto;
+
+  color: #52c7c1;
+  font-size: large;
+}
+
+.footer .followus {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer .followus .social-btns {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 1000px) and (min-width: 800px) {
+  
+}
+@media screen and (max-width: 800px) and (min-width: 425px) {  
+  .f-facebook { 
+    font-size: 35px;
+  }
+  
+  .f-twitter {
+    font-size: 35px;
+  }
+  
+  .f-instagram {
+    font-size: 21px;
+    width: 38.5px;
+    height: 38.5px;
+    margin-left: 2px;
+  }
+
+  .footer .copyright {
+    font-size: medium;
+  }
+}
+@media screen and (max-width: 425px) and (min-width: 250px) {
+  .f-facebook { 
+    font-size: 25px;
+  }
+  
+  .f-twitter {
+    font-size: 30px;
+  }
+  
+  .f-instagram {
+    font-size: 15px;
+    width: 27.5px;
+    height: 27.5px;
+    margin-left: 1.25px;
+  }
+
+  .footer .copyright {
+    font-size: small;
+  }
+}

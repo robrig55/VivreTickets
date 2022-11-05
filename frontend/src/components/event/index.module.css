@@ -1,0 +1,175 @@
+.event {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.event .divider {
+    height: 1px;
+    background-color: #52c7c1;
+    width: 100%;
+}
+
+.event .banner {
+    height: 250px;
+    
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: 100% 100%; /* Resize the background image to cover the entire container */
+}
+
+.event .content {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.event .content .title {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.event .content .detail {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.event .content .details {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    min-height: 300px;
+}
+
+.event .seat_plan {
+    margin: 20px;
+    height: 350px;
+
+    width: 25%;
+
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: 100% 100%; /* Resize the background image to cover the entire container */
+}
+
+.event .tickets {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-flow: row wrap;
+}
+
+.event .ticket_section {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 70%;
+}
+
+.event .ticket_section .table {
+    color: black;
+    border: none;
+    padding: 10px;
+}
+
+.event .ticket_section .table .th, .table .td {
+    border: none;
+}
+
+.event .buy_ticket_button {
+    margin-top: 20px;
+}
+
+.event .buy_ticket {
+    max-width: 200px;
+    align-self: flex-start;
+    margin-right: 20px;
+}
+
+.event .head_menu {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 10px;
+}
+
+.event .nav {
+    font-size: 20px !important;
+}
+
+.event .clickable {
+    cursor: pointer;
+}
+
+.event .icons {
+    width: 35px;
+    height: 35px;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 800px) {
+
+}
+
+@media screen and (max-width: 800px) and (min-width: 425px) {
+    .event .seat_plan {
+        width: 100%;
+    }
+    .event .ticket_section {
+        width: 100%;
+    }    
+    .event .head_menu {
+        flex-flow: row wrap;
+    }
+    .event .nav {
+        font-size: 15px !important;
+    }
+    .event .icons {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 425px) and (min-width: 250px) {
+    .event .seat_plan {
+        width: 100%;
+    }
+    .event .ticket_section {
+        width: 100%;
+    }
+    .event .buy_ticket_button {
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .event .head_menu {
+        flex-flow: row wrap;
+    }
+    .event .nav {
+        font-size: 15px !important;
+    }
+    .event .icons {
+        width: 25px;
+        height: 25px;
+    }
+}
